@@ -1,0 +1,11 @@
+1. Change Ownership to Your User
+
+Replace yourusername with your actual Linux username:
+
+sudo chown -R yourusername:yourusername /opt/lampp/htdocs
+
+2. All control (Read,Write,Delete)
+sudo chmod -R 777 /opt/lampp/htdocs
+
+3. Start xampp/lampp server
+sudo /opt/lampp/lampp start
