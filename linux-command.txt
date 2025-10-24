@@ -9,3 +9,15 @@ sudo chmod -R 777 /opt/lampp/htdocs
 
 3. Start xampp/lampp server
 sudo /opt/lampp/lampp start
+
+4. clean php installation
+# Remove ALL PHP packages completely
+sudo apt remove --purge php8.2-* php8.3-* php-common
+sudo apt autoremove --purge
+
+# Clean up any remaining files
+sudo rm -rf /etc/php
+sudo rm -rf /var/lib/php
+
+# Check if all PHP packages are gone
+dpkg -l | grep php
