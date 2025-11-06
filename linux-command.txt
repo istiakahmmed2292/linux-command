@@ -24,3 +24,8 @@ sudo rm -rf /var/lib/php
 
 # Check if all PHP packages are gone
 dpkg -l | grep php
+
+5. 
+cd /opt/lampp/htdocs/Laravel/TestApp
+LD_LIBRARY_PATH=/lib/x86_64-linux-gnu php artisan serve
+
